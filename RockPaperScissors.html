@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="app.js" defer></script>
+<style>
+    body{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: large;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-width: 400px;
+        margin: 20px 0 0 20px;
+        background-color: black;
+    }
+    .parent{
+        background-color: black;
+        width: 400px;
+        height: 200px;
+        margin-left: 20px;
+    }
+    .container{
+        padding: 10px 0 20px 0;
+    }
+    .container_2{
+        padding-bottom: 30px;
+    }
+    .container_3{
+        background-color: black;
+        width: 400px;
+        margin-left: 20px;
+    }
+    .player_choice{
+        color: #ccf3fa;
+    }
+    .computer_choice{
+        color: #ccf3fa;
+    }
+    .player{
+        font-size: 40px;
+    }
+    .computer{
+        font-size: 40px;
+    }
+    .res{
+        color: #ccf3fa;
+        background-color: black;
+    }
+    .buttons{
+        background-color: black;
+        width: 380px;
+        height: 50px;
+        padding: 20px 0 0 20px;
+        margin: 20px 0 30px 0;
+
+    }
+    .options{
+        font-size: 40px;
+        width: 70px;
+        height: 60px;
+        padding-top: 5px;
+        margin: 0 10px 0 10px;
+        background-color: black;
+        border-radius: 10px;
+        border: 2px solid rgb(0, 0, 0);
+    }
+    .options:hover{
+        transform: translateY(-2px);
+        border-color: goldenrod;
+        box-shadow: 0 2px 20px 0 goldenrod inset, 0 2px 20px 0 goldenrod,
+                    0 2px 20px 0 goldenrod inset, 0 2px 20px 0 goldenrod;
+    }
+    .options:active{
+        border-color: black;
+        box-shadow: 0 2px 20px 0 rgb(0, 0, 0) inset, 0 2px 20px 0 rgb(0, 0, 0),
+                    0 2px 20px 0 rgb(0, 0, 0) inset, 0 2px 20px 0 rgb(0, 0, 0);
+    }
+    #restart{
+        background-color: black;
+        color: #ccf3fa;
+        width: 200px;
+        height: 40px;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin: 10px 0 0 65px;
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+    #restart:hover{
+        transform: translateY(-2px);
+        border-color: goldenrod;
+        box-shadow: 0 2px 20px 0 goldenrod inset, 0 2px 20px 0 goldenrod,
+                    0 2px 20px 0 goldenrod inset, 0 2px 20px 0 goldenrod;
+    }
+    #restart:active{
+        border-color: black;
+        box-shadow: 0 2px 20px 0 rgb(0, 0, 0) inset, 0 2px 20px 0 rgb(0, 0, 0),
+                    0 2px 20px 0 rgb(0, 0, 0) inset, 0 2px 20px 0 rgb(0, 0, 0);
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="container">
+            <h2 class="player_choice">PLAYER: <span id="player"></span></h2>
+        </div>
+        <div class="container_2">
+            <h2 class="computer_choice">COMPUTER: <span id="computer"></span></h2>
+        </div>
+    </div>
+    <div class="container_3">
+        <h2 class="res">RESULT: <span id="result"></span></h2>
+    </div>
+    <div class="buttons">
+        <button class="options" id="🪨">🪨</button>
+        <button class="options" id="📃">📃</button>
+        <button class="options" id="✂️">✂️</button>
+    </div>
+    <button id="restart">RESTART</button>
+</body>
+</html>
